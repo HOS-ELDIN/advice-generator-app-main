@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Advice generator app</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body
+		class="h-screen flex flex-col justify-center items-center bg-DarkBlue font-serif"
+	>
+		<div class="container mx-auto p-5">
+			<div
+				class="relative text-center bg-DarkGrayishBlue p-5 md:p-10 rounded-xl max-w-[300p] md:max-w-md mx-auto"
+			>
+				<span class="block text-NeonGreen uppercase tracking-[4px] mb-5 text-sm"
+					>Advice #<span class="id"></span
+				></span>
+				<q class="advice text-LightCyan text-3xl font-bold"> </q>
+				<img
+					class="mx-auto md:hidden mt-6 mb-10"
+					src="images/pattern-divider-mobile.svg"
+					alt=""
+				/>
+				<img
+					class="mx-auto hidden md:block my-7"
+					src="images/pattern-divider-desktop.svg"
+					alt=""
+				/>
+				<button
+					class="dice rounded-full bg-NeonGreen p-5 absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 testShadow hover:shadow-NeonGreen"
+				>
+					<img src="images/icon-dice.svg" alt="" />
+				</button>
+			</div>
+		</div>
+		<div class="attribution text-xs text-center mt-10 text-LightCyan">
+			Challenge by
+			<a
+				class="text-NeonGreen"
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a
+				class="hover:shadow-NeonGreen mine text-NeonGreen"
+				href="https://www.youtube.com/channel/UCFtlaZ4rTAyWo8MZBTxhwQA"
+				target="_blank"
+				>Hossam Eldin</a
+			>.
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
